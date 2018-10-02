@@ -5,15 +5,13 @@
 
 int main(int argc, char *argv[]) {
 	
-	int sec;
-	int rest;
+	int num1, num2, num3;
 	
-	printf("input the second : ");
-	scanf("%d", &sec);
+	printf("input three numbers : ");
+	scanf("%d %d %d", &num1, &num2, &num3);
 	
-	rest = sec % 3600;
-	
-	printf("the time for %d second is %d : %d : %d", sec, sec/3600, rest/60, rest%60);
+	printf("The mean of %d %d %d is : %f", 
+						num1, num2, num3, (double)(num1 + num2 + num3) /3);
 	
 	return 0;
 }
